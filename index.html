@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Hans Weda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/blogs.js"></script> -->
+  <script src="assets/add_html.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="assets/my_custom.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<!-- The scrollable area -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  <!-- A grey horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+  
+    <div class="container-md">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Hans</a>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#images">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+  </nav>
+  
+<div id="about" class="container-md bg-white" style="padding:100px 20px;">
+  <h1>About me</h1>
+  <div class="card">
+    <div class="card-body">
+      <p class="text-bg-white">
+        Versatile principal data scientist with a broad interest in research and development. Over 15 years of experience in industrial research involving statistical data analysis, biomedical signal processing, consultancy, clinical trials, and user interaction. The work has resulted in fact based business decisions, scientific publications and intellectual property creation. Some of it can be found below.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="blogs" class="container-md bg-white" style="padding:100px 20px;">
+  <div w3-include-html="parts/blogs.html"></div>
+</div>
+
+<div id="images" class="container-md bg-secondary text-white" style="padding:100px 20px;">
+  <h1>Projects</h1>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active text-bg-secondary"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="text-bg-secondary"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <iframe src="https://wmo-gemeentevergelijker.waarstaatjegemeente.nl/?gemeentecode=GM1680&kaartje=true" height="580" width="530" title="Gemeentevergelijker" class="mx-auto d-block"></iframe>
+        <div class="carousel-caption text-secondary">
+          <h3>Gemeentevergelijker</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe src="https://wmovoorspelmodel.vng.nl/?gemeentecode=GM1680&grafiek=true" height="580" width="530" title="Wmo-voorspelmodel" class="mx-auto d-block"></iframe>
+        <div class="carousel-caption text-secondary">
+          <h3>Wmo-voorspelmodel</h3>
+      </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+  
+  <!-- Footer -->
+  <footer class="container-fluid bg-secondary text-center fixed-bottom" style="display:flex;justify-content:space-evenly;">
+    <a href="mailto:hans.weda@rond.nu" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fa fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/hansweda/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/reidhin" target="_blank" rel="noopener noreferrer" aria-label="github"><i class="fa fa-github"></i></a>
+  </footer>
+
+</body>
+</html>
