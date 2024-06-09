@@ -6,9 +6,11 @@ rsconnect/
 .Rdata
 .httr-oauth
 .DS_Store
+.Rbuildignore
 
 # data
 *.xlsx
 *.xls
 *.csv
 *.pdf
+data-raw
