@@ -76,28 +76,47 @@
 <div id="images" class="container-md bg-secondary text-white" style="padding:100px 20px;">
   <h1>Projects</h1>
   <!-- Carousel -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel carousel-dark slide" data-bs-ride="carousel">
   
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active text-bg-secondary"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="text-bg-secondary"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="text-bg-secondary"></button>
     </div>
   
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
+
       <div class="carousel-item active">
-        <iframe src="https://wmo-gemeentevergelijker.waarstaatjegemeente.nl/?gemeentecode=GM1680&kaartje=true" height="580" width="530" title="Gemeentevergelijker" class="mx-auto d-block"></iframe>
-        <div class="carousel-caption text-secondary">
-          <h3>Gemeentevergelijker</h3>
-        </div>
+        <a href="https://wmo-gemeentevergelijker.waarstaatjegemeente.nl">
+          <img src="assets/images/gemeentevergelijker.png" alt="gemeentevergelijker" class="d-block w-100">
+          <!-- <iframe src="https://wmo-gemeentevergelijker.waarstaatjegemeente.nl/?gemeentecode=GM1680&kaartje=true" height="580" width="530" title="Gemeentevergelijker" class="mx-auto d-block"></iframe> -->
+          <div class="carousel-caption text-secondary">
+            <h3>Gemeentevergelijker</h3>
+          </div>
+        </a>
       </div>
+
       <div class="carousel-item">
-        <iframe src="https://wmovoorspelmodel.vng.nl/?gemeentecode=GM1680&grafiek=true" height="580" width="530" title="Wmo-voorspelmodel" class="mx-auto d-block"></iframe>
-        <div class="carousel-caption text-secondary">
-          <h3>Wmo-voorspelmodel</h3>
+        <a href="https://wmovoorspelmodel.vng.nl/">
+          <img src="assets/images/wmo_voorspelmodel.png" alt="Wmo Voorspelmodel" class="d-block w-100">
+          <!-- <iframe src="https://wmovoorspelmodel.vng.nl/?gemeentecode=GM1680&grafiek=true" height="580" width="530" title="Wmo-voorspelmodel" class="mx-auto d-block"></iframe> -->
+          <div class="carousel-caption text-secondary">
+            <h3>Wmo-voorspelmodel</h3>
+          </div>
+        </a>
       </div>
+
+      <div class="carousel-item">
+        <a href="https://capaciteitskaart.netbeheernederland.nl/">
+          <img src="assets/images/capaciteitskaart.png" alt="Capaciteitskaart" class="d-block w-100">
+          <div class="carousel-caption text-secondary">
+            <h3>Capaciteitskaart</h3>
+          </div>
+        </a>
       </div>
+
     </div>
   
     <!-- Left and right controls/icons -->
