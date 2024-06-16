@@ -13,7 +13,7 @@ process_json <- function() {
   out = c()
   
   out = c(out, paste0("<a href='https://orcid.org/0000-0001-6675-2270' style='color:inherit; text-decoration:none;'>"))
-  out = c(out, paste0("<h1>My Publications</h1>"))
+  out = c(out, paste0("<h1>Selected Publications</h1>"))
   out = c(out, "</a>")
   out = c(out, "<hr>")
   out = c(out, "<div id='myDIV' class='header'></div>")
@@ -21,7 +21,7 @@ process_json <- function() {
   out = c(out, "<table class='table table-hover'>")
   out = c(out, "  <thead>")
   out = c(out, "  <tr>")
-  out = c(out, "  <th scope='col'>No</th>")
+  # out = c(out, "  <th scope='col'>No</th>")
   out = c(out, "  <th scope='col'>Title</th>")
   out = c(out, "  <th scope='col'>DOI</th>")
   out = c(out, "  </tr>")
@@ -32,7 +32,7 @@ process_json <- function() {
     doi <- json$group[[i]]$`external-ids`$`external-id`[[1]]$`external-id-value`
     ref <- paste0("https://doi.org/", doi)
     out = c(out, paste0("  <tr onclick=\"window.location='", ref, "'\">"))
-    out = c(out, paste0("  <th scope='row'>", i, "</th>"))
+    # out = c(out, paste0("  <th scope='row'>", i, "</th>"))
     out = c(out, paste0(
       "  <td>", 
       gsub("<.*?>", "", json$group[[i]]$`work-summary`[[1]]$title$title$value), 
