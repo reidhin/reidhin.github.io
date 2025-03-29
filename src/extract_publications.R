@@ -31,6 +31,15 @@ process_json <- function() {
   for (i in 1:length(json$group)) {
     doi <- json$group[[i]]$`external-ids`$`external-id`[[1]]$`external-id-value`
     ref <- paste0("https://doi.org/", doi)
+    date <- stringr::str_c(
+      json$group[[i]]$`work-summary`[[1]]$`publication-date`$day$value,
+      json$group[[i]]$`work-summary`[[1]]$`publication-date`$month$value,
+      json$group[[i]]$`work-summary`[[1]]$`publication-date`$year$value,
+      sep = "-"
+    )
+    if (length(date) == 0) {
+      date <- NULL
+    }
     out = c(out, paste0("  <tr onclick=\"window.location='", ref, "'\">"))
     # out = c(out, paste0("  <th scope='row'>", i, "</th>"))
     out = c(out, paste0(
@@ -40,12 +49,7 @@ process_json <- function() {
       "<small class='text-secondary'>", 
       stringr::str_c(
         json$group[[i]]$`work-summary`[[1]]$`journal-title`$value,
-        stringr::str_c(
-          json$group[[i]]$`work-summary`[[1]]$`publication-date`$day$value,
-          json$group[[i]]$`work-summary`[[1]]$`publication-date`$month$value,
-          json$group[[i]]$`work-summary`[[1]]$`publication-date`$year$value,
-          sep = "-"
-        ),
+        date,
         json$group[[i]]$`work-summary`[[1]]$type,
         sep = " | "
       ),
