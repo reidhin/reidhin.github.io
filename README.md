@@ -1,0 +1,60 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# pages
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of pages is to create a homepage,
+[reidhin.github.io](http://reidhin.github.io).
+
+The homepage consists of a main template page with several parts:
+
+- blogs
+- patents
+- publications
+
+Each of the parts can be generated from the code in `scr`. This code
+respectively extracts the latest update of the blogs, patents, and
+publications from internet. The html-pages are inserted in the main
+`index.html` ussing the java-script `assets/add_html.js`.
+
+The homepage uses bootstrap.
+
+## Project organisation
+
+    ├── assets
+    │   ├── add_html.js                     <- java-script that adds the html from `parts` to `index.html`
+    │   ├── articles.js                     <- Not used; java-script that attempts to add blogs automatically
+    │   ├── dart_mode.js                    <- java-script to toggle dark/light mode
+    │   ├── favicon.png                     <- favicon of reidhin
+    │   ├── images                          <- Folder with images of projects
+    │   │   ├── capaciteitskaart.png
+    │   │   ├── gemeentevergelijker.png
+    │   │   └── wmo_voorspelmodel.png
+    │   └── my_custom.css                   <- tiny bit of custom css                          
+    │
+    ├── index.html                          <- starting point of the webpage
+    │
+    ├── inst
+    │   └── extdata                         <- Folder with some extra data, not actively used
+    ├── LICENSE.md                          <- License
+    ├── pages.Rproj
+    ├── parts                               <- Folder with html-files of the respective parts
+    │   ├── blogs.html
+    │   ├── patents.html
+    │   └── publications.html
+    ├── README.md
+    ├── README.Rmd                          <- README met uitleg en beschrijving van het project
+    └── src                                 <- Folder with R-files to extract info from internet to create the respective parts
+        ├── extract_blogs.R
+        ├── extract_patents.R
+        └── extract_publications.R
+
+## Licentie
+
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This
+work falls under
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>.
