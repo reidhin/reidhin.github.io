@@ -24,7 +24,7 @@ The homepage consists of a main template page with several parts:
 * patents
 * publications
 
-Each of the parts can be generated from the code in `scr`. 
+Each of the parts can be generated from the code in `src`. 
 This code respectively extracts the latest update of the blogs, patents, 
 and publications from internet. 
 The html-pages are inserted in the main `index.html` ussing the java-script
@@ -42,6 +42,7 @@ The homepage uses bootstrap.
 │   ├── favicon.png                     <- favicon of reidhin
 │   ├── images                          <- Folder with images of projects
 │   │   ├── capaciteitskaart.png
+│   │   ├── datapro112.jpeg
 │   │   ├── gemeentevergelijker.png
 │   │   └── wmo_voorspelmodel.png
 │   └── my_custom.css                   <- tiny bit of custom css                          
