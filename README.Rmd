@@ -27,7 +27,7 @@ The homepage consists of a main template page with several parts:
 Each of the parts can be generated from the code in `src`. 
 This code respectively extracts the latest update of the blogs, patents, 
 and publications from internet. 
-The html-pages are inserted in the main `index.html` ussing the java-script
+The html-pages are inserted in the main `index.html` using the java-script
 `assets/add_html.js`.
 
 The homepage uses bootstrap.
